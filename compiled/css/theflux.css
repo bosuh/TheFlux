@@ -4,8 +4,8 @@
 	Designed and built by Zach Wise at VeriteCo
 */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,400italic");
-@import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic);
+@import url("http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic");
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -270,7 +270,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: 'Lora', Georgia, "Times New Roman", Times, serif;
+  font-family: "Libre Baskerville", Georgia, "Times New Roman", Times, serif;
   font-size: 19px;
   line-height: 1.846;
   color: #666666;
@@ -370,7 +370,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 900;
   line-height: 1.1;
   color: inherit;
@@ -5063,6 +5063,250 @@ button.close {
   border: 0;
   -webkit-appearance: none;
 }
+.tooltip {
+  position: absolute;
+  z-index: 1070;
+  display: block;
+  font-family: "Libre Baskerville", Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-break: auto;
+  line-height: 1.846;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  white-space: normal;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+  font-size: 17px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.tooltip.in {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+.tooltip.top {
+  margin-top: -3px;
+  padding: 5px 0;
+}
+.tooltip.right {
+  margin-left: 3px;
+  padding: 0 5px;
+}
+.tooltip.bottom {
+  margin-top: 3px;
+  padding: 5px 0;
+}
+.tooltip.left {
+  margin-left: -3px;
+  padding: 0 5px;
+}
+.tooltip-inner {
+  max-width: 200px;
+  padding: 3px 8px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #727272;
+  border-radius: 3px;
+}
+.tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.tooltip.top .tooltip-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #727272;
+}
+.tooltip.top-left .tooltip-arrow {
+  bottom: 0;
+  right: 5px;
+  margin-bottom: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #727272;
+}
+.tooltip.top-right .tooltip-arrow {
+  bottom: 0;
+  left: 5px;
+  margin-bottom: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #727272;
+}
+.tooltip.right .tooltip-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: #727272;
+}
+.tooltip.left .tooltip-arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #727272;
+}
+.tooltip.bottom .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #727272;
+}
+.tooltip.bottom-left .tooltip-arrow {
+  top: 0;
+  right: 5px;
+  margin-top: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #727272;
+}
+.tooltip.bottom-right .tooltip-arrow {
+  top: 0;
+  left: 5px;
+  margin-top: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #727272;
+}
+.popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1060;
+  display: none;
+  max-width: 276px;
+  padding: 1px;
+  font-family: "Libre Baskerville", Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-break: auto;
+  line-height: 1.846;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  white-space: normal;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+  font-size: 19px;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.popover.top {
+  margin-top: -10px;
+}
+.popover.right {
+  margin-left: 10px;
+}
+.popover.bottom {
+  margin-top: 10px;
+}
+.popover.left {
+  margin-left: -10px;
+}
+.popover-title {
+  margin: 0;
+  padding: 8px 14px;
+  font-size: 19px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ebebeb;
+  border-radius: 2px 2px 0 0;
+}
+.popover-content {
+  padding: 9px 14px;
+}
+.popover > .arrow,
+.popover > .arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.popover > .arrow {
+  border-width: 11px;
+}
+.popover > .arrow:after {
+  border-width: 10px;
+  content: "";
+}
+.popover.top > .arrow {
+  left: 50%;
+  margin-left: -11px;
+  border-bottom-width: 0;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0.075);
+  bottom: -11px;
+}
+.popover.top > .arrow:after {
+  content: " ";
+  bottom: 1px;
+  margin-left: -10px;
+  border-bottom-width: 0;
+  border-top-color: #ffffff;
+}
+.popover.right > .arrow {
+  top: 50%;
+  left: -11px;
+  margin-top: -11px;
+  border-left-width: 0;
+  border-right-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0.075);
+}
+.popover.right > .arrow:after {
+  content: " ";
+  left: 1px;
+  bottom: -10px;
+  border-left-width: 0;
+  border-right-color: #ffffff;
+}
+.popover.bottom > .arrow {
+  left: 50%;
+  margin-left: -11px;
+  border-top-width: 0;
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgba(0, 0, 0, 0.075);
+  top: -11px;
+}
+.popover.bottom > .arrow:after {
+  content: " ";
+  top: 1px;
+  margin-left: -10px;
+  border-top-width: 0;
+  border-bottom-color: #ffffff;
+}
+.popover.left > .arrow {
+  top: 50%;
+  right: -11px;
+  margin-top: -11px;
+  border-right-width: 0;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0.075);
+}
+.popover.left > .arrow:after {
+  content: " ";
+  right: 1px;
+  border-right-width: 0;
+  border-left-color: #ffffff;
+  bottom: -10px;
+}
 .clearfix:before,
 .clearfix:after,
 .dl-horizontal dd:before,
@@ -5470,6 +5714,18 @@ button.close {
   opacity: 1;
   transition-delay: 0s;
 }
+/*
+@font-face {
+	font-family: 'Baskerville';
+	src:url('../fonts/Baskerville/Baskerville.eot?wnn7re');
+	src:url('../fonts/Baskerville/Baskerville.eot?#iefixwnn7re') format('embedded-opentype'),
+		url('../fonts/Baskerville/Baskerville.woff?wnn7re') format('woff'),
+		url('../fonts/Baskerville/Baskerville.ttf?wnn7re') format('truetype'),
+		url('../fonts/Baskerville/Baskerville.svg?wnn7') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+*/
 @font-face {
   font-family: 'icomoon';
   src: url('../fonts/icomoon.eot?wnn7re');
@@ -5621,7 +5877,7 @@ p {
 }
 p.lead {
   font-weight: 300;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Libre Baskerville", Georgia, "Times New Roman", Times, serif;
 }
 .text-italic {
   font-style: italic;
@@ -5661,7 +5917,7 @@ span.dropcap {
 .byline {
   font-size: 0.8em;
   color: #bbbbbb;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .copyright {
   text-align: center;
@@ -5673,7 +5929,7 @@ span.dropcap {
   font-size: 12px;
   color: #666;
   line-height: 14px;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 /*	Better Underline Links
 ================================================== */
@@ -5755,7 +6011,7 @@ footer p a:focus {
   text-align: center;
 }
 .related {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
 }
 @media (min-width: 480px) {
@@ -5781,7 +6037,7 @@ footer p a:focus {
   }
 }
 footer {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #666;
   background-color: #F3F3F3;
   position: relative;
@@ -5794,7 +6050,7 @@ footer #footer-storybar h2 {
   padding-bottom: 20px;
   font-size: 24px;
   background-color: #CCC;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
 }
 footer .about-knightlab {
@@ -5831,7 +6087,7 @@ footer img.logos {
 }
 footer h3 {
   margin-top: 0;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 24px;
 }
 footer .copyright {
@@ -5842,7 +6098,7 @@ footer address {
   display: none;
   margin-top: 10px;
   padding-left: 28%;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   color: #999;
@@ -5861,15 +6117,17 @@ footer address {
 }
 blockquote {
   display: block;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 0;
   font-size: 33.25px;
+  line-height: 47.5px;
   margin: 20px 0px 20px 0px;
   border: 0;
   color: #222222;
 }
 blockquote p {
   margin: 0;
+  font-style: italic;
 }
 blockquote p:before {
   content: "“";
@@ -5888,6 +6146,27 @@ blockquote cite:before {
   content: "— ";
   color: #bbbbbb;
 }
+.blockquote-color {
+  background-color: #2196f3;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.blockquote-color blockquote {
+  color: #ffffff;
+}
+.blockquote-color blockquote p:before {
+  content: "“";
+  color: #ffffff;
+}
+.blockquote-color blockquote p:after {
+  content: "”";
+  color: #ffffff;
+}
+.blockquote-color blockquote cite {
+  color: #e6e6e6;
+}
 figure {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -5897,7 +6176,7 @@ figure figcaption {
   font-size: 12px;
   color: #666;
   line-height: 14px;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 figure figcaption.credit {
   text-align: right;
@@ -5905,7 +6184,7 @@ figure figcaption.credit {
   line-height: 11px;
   color: #bbbbbb;
   margin: 1px 0px 5px 0px;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 figure .img-responsive {
   width: 100%;
@@ -6051,7 +6330,7 @@ figure img.ll-notloaded {
   line-height: 11px;
   color: #bbbbbb;
   margin: 1px 0px 5px 0px;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .carousel .caption {
   margin-left: 15px;
@@ -6062,6 +6341,50 @@ figure img.ll-notloaded {
 .full-width .carousel .credit {
   margin-right: 20px;
 }
+/*
+header.navigation {
+	font-family: "Apres RE","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	
+	&.navbar-fixed-top {
+		position:fixed;
+		top:0;
+		margin-top:0;
+		//.box-shadow(none);
+		//border-bottom: 1px solid #CCC;
+		//background-color:rgba(255,255,255,0.9);
+	}
+	
+	h1, h2, h3, h4, h5, h6 {
+		font-family: "Apres RE","Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-weight:normal;
+	}
+	
+	.navbar-knightlab, .navbar-product, .navbar-story {
+		margin-bottom:0;
+		border:0;
+	}
+	
+	// NAVBAR KNIGHTLAB
+	.navbar-knightlab {
+		img.logo {
+			height:50px;
+		}
+	}
+	.divider-vertical {
+		height: 30px;
+		//margin: 0 9px;
+		margin-right:1px;
+		margin-top:12px;
+		border-right: 1px solid #FFF;
+		border-left: 1px solid #CCC;
+	}
+	
+	
+
+}
+*/
 header.navigation {
   font-family: "Apres RE", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -6269,23 +6592,32 @@ header.navigation .divider-vertical {
   text-decoration: none;
 }
 .navbar {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
 .navbar.navbar-default {
   background-color: transparent;
 }
-.navbar.navbar-default .navbar-brand {
+.navbar.navbar-default .navbar-brand,
+.navbar.navbar-default #navbar-title {
   color: #FFF;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+  z-index: 5;
+  font-size: 24px;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+}
+.navbar.navbar-default .dropdown.open .navbar-brand,
+.navbar.navbar-default .dropdown.open #navbar-title {
+  color: #333;
+  text-shadow: none;
 }
 .navbar.navbar-default .navbar-nav {
   margin-right: 25px;
 }
 .navbar.navbar-default .navbar-nav > li > a {
   color: #FFF;
-  background-color: rgba(0, 0, 0, 0.5);
-  margin-top: 25px;
 }
 .navbar.navbar-default .navbar-nav > li.active > a {
   color: #666666;
@@ -6330,31 +6662,280 @@ header.navigation .divider-vertical {
 .navbar.navbar-fixed-top {
   z-index: 999 !important;
 }
-.navbar.in-article {
+header.navigation #navbar-product {
+  z-index: 20;
+  border-radius: 0;
+  border: 0;
+  position: static;
+  top: 0;
+  margin: 0;
+  border-bottom: 1px solid transparent;
+}
+header.navigation #navbar-product .container-fluid {
+  position: relative;
+}
+header.navigation #navbar-product.in-article {
   background-color: rgba(255, 255, 255, 0.9);
   border-bottom: 1px solid #CCC;
 }
-.navbar.in-article .navbar-brand {
-  color: #666666;
-}
-.navbar.in-article .navbar-nav {
+header.navigation #navbar-product.in-article .navbar .navbar-nav {
   margin-right: 0;
 }
-.navbar.in-article .navbar-nav > li > a {
+header.navigation #navbar-product.in-article .navbar .navbar-nav > li > a {
   color: #666666;
   background-color: transparent;
   margin-top: 0;
 }
-.navbar.in-article .navbar-nav > li.active > a {
+header.navigation #navbar-product.in-article .navbar .navbar-nav > li.active > a {
   color: #FFF;
   background-color: #666666;
 }
-.navbar.in-article a.navbar-brand img {
+header.navigation #navbar-product.in-article .navbar a.navbar-brand {
+  color: #333;
+}
+header.navigation #navbar-product.in-article .navbar a.navbar-brand img {
   width: 36px;
   height: 36px;
 }
-.navbar.in-article .navbar-toggle .icon-bar {
+header.navigation #navbar-product.in-article .navbar .navbar-toggle .icon-bar {
   background-color: #333;
+}
+header.navigation #navbar-product.in-article .navbar-brand,
+header.navigation #navbar-product.in-article #navbar-title {
+  color: #444;
+  text-shadow: none;
+}
+header.navigation #navbar-product.in-article .navbar-brand-knightlab {
+  color: #999;
+}
+header.navigation #navbar-product.in-article #stories-btn {
+  color: #999;
+}
+header.navigation #navbar-product.in-article #stories-btn:hover {
+  color: #000;
+}
+header.navigation #navbar-product.in-article #navbar-title {
+  color: #000;
+}
+header.navigation #navbar-product.in-article.no-cover {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+header.navigation #navbar-product.in-article.no-cover #navbar-title {
+  display: block;
+  color: #000;
+}
+header.navigation #navbar-product.in-article.no-cover .navbar-brand-knightlab {
+  color: #999;
+}
+header.navigation #navbar-product.in-article #navbar-title,
+header.navigation #navbar-product.in-article .divider-vertical {
+  display: block;
+}
+header.navigation #navbar-product.in-article li a {
+  color: #777777;
+}
+header.navigation #navbar-product.in-article .navbar-nav > li > a.knightlab-logo {
+  padding: 0;
+  padding-top: 5px;
+}
+header.navigation #navbar-product.in-article .knightlab-logo img {
+  height: 40px;
+  margin-right: 10px;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 0;
+  border: 0;
+}
+header.navigation #navbar-product.in-article .knightlab-logo b.caret {
+  display: inline-block;
+}
+header.navigation #navbar-product.no-cover {
+  background-color: rgba(255, 255, 255, 0.75);
+  -webkit-transition: all 0.30s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: initial;
+}
+header.navigation #navbar-product.no-cover .navbar-brand-knightlab,
+header.navigation #navbar-product.no-cover #navbar-title {
+  color: #444;
+  text-shadow: none;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.9);
+}
+header.navigation #navbar-product.no-cover #navbar-title,
+header.navigation #navbar-product.no-cover .divider-vertical {
+  display: block;
+}
+header.navigation #navbar-product.no-cover #navbar-title {
+  display: none;
+}
+header.navigation #navbar-product.no-cover li a {
+  color: #777777;
+}
+header.navigation #navbar-product #stories-btn {
+  z-index: 5;
+  color: #FFF;
+}
+header.navigation #navbar-product #stories-btn.btn {
+  background-color: transparent;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-top: 8px;
+  border-color: #CCC;
+  color: #FFF;
+}
+header.navigation #navbar-product #stories-btn:hover {
+  color: #DDD;
+}
+header.navigation #navbar-product #stories-btn.open {
+  background-color: #000;
+  border: 1px solid #999;
+  border-top: 0;
+  color: #FFF;
+}
+header.navigation #navbar-product #stories-btn.open:hover {
+  color: #CCC;
+}
+header.navigation #navbar-product #stories-btn .icon-stack {
+  padding-top: 5px;
+}
+header.navigation #navbar-product .knightlab-logo img {
+  height: 76px;
+  margin-right: 0px;
+}
+header.navigation #navbar-product .knightlab-logo b.caret {
+  display: none;
+}
+header.navigation #navbar-product .divider-vertical {
+  display: none;
+}
+header.navigation #navbar-product #navbar-title {
+  font-size: 16px;
+  display: none;
+  text-align: center;
+  width: 100%;
+  float: none;
+  position: absolute;
+  top: 0;
+  padding-top: 15px;
+  padding-bottom: 11.5px;
+  z-index: 0;
+}
+header.navigation #navbar-product #navbar-title small {
+  color: #999;
+  margin-left: 5px;
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  header.navigation #navbar-product #title-bar-title small {
+    display: none!important;
+  }
+}
+@media (min-width: 768px) {
+  header.navigation #navbar-product #title-bar-title {
+    margin-left: -15px;
+    padding-top: 11.5px;
+    padding-bottom: 11.5px;
+  }
+}
+header.navigation #navbar-product .btn,
+header.navigation #navbar-product a.btn {
+  font-size: 14px;
+}
+header.navigation #navbar-product .btn.btn-default,
+header.navigation #navbar-product a.btn.btn-default {
+  color: #333333;
+}
+header.navigation #navbar-product .navbar-header {
+  float: none;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+header.navigation #navbar-product .navbar-header .navbar-brand {
+  float: none;
+}
+header.navigation #navbar-product ul.nav.navbar-nav li.active a {
+  background-color: #CCC;
+}
+header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu a.btn-success,
+header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu .btn-success {
+  margin: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 14px;
+  padding: 6px 12px;
+}
+header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu a.btn-success:hover,
+header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu .btn-success:hover,
+header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu a.btn-success:focus,
+header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu .btn-success:focus,
+header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu a.btn-success:active,
+header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu .btn-success:active,
+header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu a.btn-success.active,
+header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu .btn-success.active,
+.open .dropdown-toggleheader.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu a.btn-success,
+.open .dropdown-toggleheader.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu .btn-success {
+  background-color: #47a447;
+  border-color: #398339;
+}
+header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu a.btn-success {
+  color: #fff;
+}
+header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu .about-knightlab {
+  margin: 20px;
+}
+header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu .about-knightlab ul li,
+header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu .about-knightlab p {
+  font-size: 14px;
+}
+header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu .about-knightlab p {
+  font-size: 14px;
+}
+header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu .about-knightlab h3 {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 0;
+}
+#navbar-story {
+  z-index: 1;
+  background-color: #333;
+  margin-top: -60px;
+  -webkit-box-shadow: inset 0 0 50px #000000;
+  box-shadow: inset 0 0 50px #000000;
+}
+#navbar-story .story-item,
+#navbar-story a.story-item {
+  background-color: #000;
+  height: 60px;
+}
+#navbar-story .story-item.tall,
+#navbar-story a.story-item.tall {
+  height: auto;
+}
+#navbar-story .story-item.tall .story-item-background,
+#navbar-story a.story-item.tall .story-item-background {
+  height: auto;
+}
+#navbar-story .story-item.tall .story-item-container,
+#navbar-story a.story-item.tall .story-item-container {
+  height: auto;
+}
+#navbar-story .story-item.tall .story-item-container .story-item-content p,
+#navbar-story a.story-item.tall .story-item-container .story-item-content p {
+  display: block;
+}
+#navbar-story .story-item .story-item-background,
+#navbar-story a.story-item .story-item-background,
+#navbar-story .story-item .story-item-container,
+#navbar-story a.story-item .story-item-container {
+  height: 60px;
 }
 .story-cover {
   width: 100%;
@@ -6444,14 +7025,17 @@ header.navigation .divider-vertical {
   color: #FFF;
   text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.9);
   margin-bottom: 5px;
-  font-weight: 200;
+  font-weight: 300;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
 }
 .story-cover .story-cover-content .byline {
   font-size: 22px;
   color: #FFF;
   text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
-  font-weight: 400;
+  font-weight: 200;
   margin-bottom: 5px;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .story-cover-caption {
   position: relative;
