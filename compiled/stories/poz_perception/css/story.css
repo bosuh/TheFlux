@@ -15,7 +15,9 @@ p {
 mark {
 	background-color: #9dd9f1 !important;
 }
-
+.poz-navigation {
+	text-align:center;
+}
 #blankSpace {
 	height: 100px;
 	margin-top: 200px;
