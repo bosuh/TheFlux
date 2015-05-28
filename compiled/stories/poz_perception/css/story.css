@@ -16,11 +16,15 @@ mark {
 	background-color: #9dd9f1 !important;
 }
 
+.lazyload {
+	opacity: 1 !important;
+}
+
 .poz-nav.poz-nav-sticky [class*="col-"] {
   padding: 0;
 }
 .poz-nav {
-	width:100%;
+	width:80%;
 	background-color:rgba(255, 255, 255, 0.9);
 	text-align:center;
 }
@@ -36,23 +40,29 @@ mark {
 	border-bottom: 1px solid #CCC;
 	z-index:99;
 }
+
 .poz-nav-btn {
-	width:100%;
-	height:120px;
+	width: 9.5em;
+	height: 9.5em;
 	display:inline-block;
-	border: 1px solid #eeeeee;
-	color:#666;
-	font-weight:400;
-	-webkit-transition: all .5s ease;
-	  -moz-transition: all .5s ease;
-	  -ms-transition: all .5s ease;
-	  -o-transition: all .5s ease;
-	  transition: all .5s ease;
-	  transition-property: all;
-	  transition-duration: .5s;
-	  transition-timing-function: ease;
-	  transition-delay: initial;
+	margin: 0.25em;
+	opacity: 0.7;
 }
+
+.storyBTN {
+	height: 8em;
+	width: 8em;
+}
+
+.storyBTN:hover {
+	opacity: 1.0;
+}
+
+.storyBTN:active {
+	opacity: 0.85;
+}
+
+
 .poz-nav.poz-nav-sticky .poz-nav-btn {
 	height:60px;
 	border-bottom:0;
@@ -70,63 +80,31 @@ mark {
 	color:#666;
 }
 img.img-show {
-	opacity:1;
+	opacity: 1 !important;
 }
 .lazyload img.img-show {
-	opacity:1;
+	opacity: 1 !important;
 }
 
 .poz-navigation {
 	text-align:center;
 }
-#blankSpace {
-	height: 100px;
-	margin-top: 200px;
+
+
+.showUp {
+	opacity: 1 !important;
+	width: 60%;
 }
 
-/*Cool navigation buttons*/
-
-.storyBTN {
-	height: 8em;
-	width: 8em;
-	margin: 0.25em;
-	opacity: 0.7;
-}
-
-.storyBTN:hover {
-	opacity: 1.0;
-}
-
-.storyBTN:active {
-	opacity: 0.85;
-}
-
-
-/*Individual buttons*/
-
-#johnBTN {
-	background-image: url('../img/coffee.png');
-}
-
-#eddieBTN {
-	background-image: url('../img/coffee.png');
-}
-
-#damonBTN {
-	background-image: url('../img/coffee.png');
-}
-
-#jimBTN {
-	background-image: url('../img/coffee.png');
-}
-
-#hadeisBTN {
-	background-image: url('../img/coffee.png');
-}
-
-#philBTN {
-	background-image: url('../img/coffee.png');
-}
+/*	-webkit-transition: all .5s ease;
+	  -moz-transition: all .5s ease;
+	  -ms-transition: all .5s ease;
+	  -o-transition: all .5s ease;
+	  transition: all .5s ease;
+	  transition-property: all;
+	  transition-duration: .5s;
+	  transition-timing-function: ease;
+	  transition-delay: initial;*/
 
 
 
@@ -136,26 +114,3 @@ img.img-show {
 
 
 
-#johnR, #eddieG, #damonJ, #jimP, #hadeisS, #philC {
-	
-}
-
-/*#eddieG {
-	display: none;
-}
-
-#damonJ {
-	display: none;
-}
-
-#jimP {
-	display: none;
-}
-
-#hadeisS {
-	display: none;
-}
-
-#philC {
-	display: none;
-}*/

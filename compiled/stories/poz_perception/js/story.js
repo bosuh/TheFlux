@@ -1,22 +1,23 @@
 $(document).ready(function(){
 	
 	// NAV BAR STICKY
-	$('#poz-nav').waypoint({
-		handler: function(direction) {
-		
-			if (direction == "down") {
-				$('#poz-nav').addClass('poz-nav-sticky');
-			} else if (direction == "up") {
-				$('#poz-nav').removeClass('poz-nav-sticky');
-			}
-		 
-		},
-		offset:120
-	});
-	$('a').smoothScroll({
-		offset: -100
-	});
-	
+	/*
+		$('#poz-nav').waypoint({
+			handler: function(direction) {
+			
+				if (direction == "down") {
+					$('#poz-nav').addClass('poz-nav-sticky');
+				} else if (direction == "up") {
+					$('#poz-nav').removeClass('poz-nav-sticky');
+				}
+			 
+			},
+			offset:120
+		});
+		$('a').smoothScroll({
+			offset: -100
+		});
+	*/
 	// THE BUTTONS WORK IN REVERSE ORDER
 
 
