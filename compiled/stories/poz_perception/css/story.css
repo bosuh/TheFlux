@@ -1,7 +1,8 @@
 blockquote.lead {
 	margin: 2em;
-	color: gray;
 	font-size: 1.25em;
+	font-family: Libre Baskerville;
+	font-weight: 700;
 }
 
 h1 {
@@ -10,6 +11,11 @@ h1 {
 
 p {
 	color: black;
+}
+
+em {
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	color: #A8A8A8;
 }
 
 mark {
@@ -23,11 +29,7 @@ mark {
 .poz-nav.poz-nav-sticky [class*="col-"] {
   padding: 0;
 }
-.poz-nav {
-	width:80%;
-	background-color:rgba(255, 255, 255, 0.9);
-	text-align:center;
-}
+
 .poz-nav .navbar {
 	  margin-bottom: 0px;
 }
@@ -82,18 +84,13 @@ mark {
 img.img-show {
 	opacity: 1 !important;
 }
-.lazyload img.img-show {
-	opacity: 1 !important;
-}
 
 .poz-navigation {
 	text-align:center;
 }
 
-
 .showUp {
 	opacity: 1 !important;
-	width: 60%;
 }
 
 /*	-webkit-transition: all .5s ease;
