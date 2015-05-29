@@ -1,5 +1,15 @@
 $(document).ready(function(){
+
+	$('.word-prev').on('click', function(){
+    $(this).parent().prev('.definition').toggle(this);
+	});
 	
+	$('.word-next').on('click', function(){
+    $(this).parent().next('.definition').toggle(this);
+	});
+
+//http://stackoverflow.com/questions/28374713/how-can-i-disable-jquery-toggle-effect-when-the-screen-size-changes
+
 	// NAV BAR STICKY
 	/*
 		$('#poz-nav').waypoint({
