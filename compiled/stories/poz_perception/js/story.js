@@ -10,27 +10,6 @@ $(document).ready(function(){
 
 //http://stackoverflow.com/questions/28374713/how-can-i-disable-jquery-toggle-effect-when-the-screen-size-changes
 
-	// NAV BAR STICKY
-	/*
-		$('#poz-nav').waypoint({
-			handler: function(direction) {
-			
-				if (direction == "down") {
-					$('#poz-nav').addClass('poz-nav-sticky');
-				} else if (direction == "up") {
-					$('#poz-nav').removeClass('poz-nav-sticky');
-				}
-			 
-			},
-			offset:120
-		});
-		$('a').smoothScroll({
-			offset: -100
-		});
-	*/
-	// THE BUTTONS WORK IN REVERSE ORDER
-
-
 	// THESE ARE BUTTON-SPECIFIC FUNCTIONS TO MAKE THE NARRATIVES APPEAR
 	
 	$( "#johnR-btn" ).click(function() {
