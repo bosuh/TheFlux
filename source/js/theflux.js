@@ -501,14 +501,25 @@ $(document).ready(function(){
 	================================================== */
 	$('.profile-nav').waypoint({
 		handler: function(direction) {
-			if (browser.mobile || screen.width < 500) {
+			var profile_width = 100/profile_array.length;
+			if (browser.mobile || window.innerWidth < 500) {
 				
 			} else {
 				if (direction == "down") {
 					$('.profile-nav').addClass('profile-nav-sticky');
+					
 				} else if (direction == "up") {
 					$('.profile-nav').removeClass('profile-nav-sticky');
+					profile_width = 33.3;
 				}
+				if (window.innerWidth < 1000 && profile_array.length > 4) {
+					for (var i = 0; i < profile_array.length; i++) {
+						var profile = profile_array[i];
+						profile.style.width = profile_width + "%";
+	
+					};
+				}
+				
 			}
 			
 		 
@@ -540,13 +551,12 @@ $(document).ready(function(){
 		profile_array = $( ".profile-nav .profile-item" ).toArray();
 		var profile_width = 100/profile_array.length;
 		
-		if (browser.mobile || screen.width < 500) {
+		if (browser.mobile || window.innerWidth < 500) {
 			profile_width = 100;
-		} else if (screen.width < 1000 && profile_array.length > 4) {
+		} else if (window.innerWidth < 1000 && profile_array.length > 4) {
 			profile_width = 33.3;
 		}
-		trace(browser)
-		trace(screen.width)
+
 		for (var i = 0; i < profile_array.length; i++) {
 			var profile = profile_array[i];
 			profile.style.width = profile_width + "%";

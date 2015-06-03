@@ -7315,6 +7315,7 @@ header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu .about-knight
 .profile-nav.profile-nav-sticky a.profile-button h3 {
   font-size: 16px;
   line-height: 16px;
+  opacity: 0;
 }
 .profile-nav.profile-nav-sticky a.profile-button p {
   display: none;
