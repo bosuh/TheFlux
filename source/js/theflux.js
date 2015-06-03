@@ -170,10 +170,22 @@ $(document).ready(function(){
 				if (direction === "up") {
 					$('.story-cover-content').css("opacity", "1");
 					navbarChange(false);
+					if ($("#video-cover").length == 0) {
+						
+					} else{
+						var vid = document.getElementById("video-cover");
+						vid.play();
+					}
 				}
 				if (direction === "down") {
 					$('.story-cover-content').css("opacity", "0");
 					navbarChange(true);
+					if ($("#video-cover").length == 0) {
+						
+					} else{
+						var vid = document.getElementById("video-cover");
+						vid.pause();
+					}
 				}
 			 
 			},

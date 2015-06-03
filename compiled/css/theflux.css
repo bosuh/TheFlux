@@ -7079,6 +7079,11 @@ header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu .about-knight
   background-position: center center;
   background-repeat: no-repeat;
 }
+.story-cover .story-cover-image video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
 .story-cover .story-cover-arrow {
   bottom: 25px;
   position: absolute;

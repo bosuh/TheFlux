@@ -132,6 +132,17 @@
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
+	"\/source\/jade\/stories\/video_cover_example.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/stories\/video_cover_example.jade",
+		"outputAbbreviatedPath": "\/compiled\/stories\/story_template\/video_cover_example.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 0
+		},
 	"\/source\/jade\/typography.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
