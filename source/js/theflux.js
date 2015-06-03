@@ -501,12 +501,16 @@ $(document).ready(function(){
 	================================================== */
 	$('.profile-nav').waypoint({
 		handler: function(direction) {
-		
-			if (direction == "down") {
-				$('.profile-nav').addClass('profile-nav-sticky');
-			} else if (direction == "up") {
-				$('.profile-nav').removeClass('profile-nav-sticky');
+			if (browser.mobile || screen.width < 500) {
+				
+			} else {
+				if (direction == "down") {
+					$('.profile-nav').addClass('profile-nav-sticky');
+				} else if (direction == "up") {
+					$('.profile-nav').removeClass('profile-nav-sticky');
+				}
 			}
+			
 		 
 		},
 		offset:120
@@ -536,7 +540,13 @@ $(document).ready(function(){
 		profile_array = $( ".profile-nav .profile-item" ).toArray();
 		var profile_width = 100/profile_array.length;
 		
-		
+		if (browser.mobile || screen.width < 500) {
+			profile_width = 100;
+		} else if (screen.width < 1000 && profile_array.length > 4) {
+			profile_width = 33.3;
+		}
+		trace(browser)
+		trace(screen.width)
 		for (var i = 0; i < profile_array.length; i++) {
 			var profile = profile_array[i];
 			profile.style.width = profile_width + "%";
@@ -697,6 +707,84 @@ randomBetween = function(min, max) {
 	return Math.floor(Math.random() * (max - min + 1) + min);
 };
 
+/* Browser Detector
+================================================== */
+var browser = {};
+
+(function() {
+
+	var ua = navigator.userAgent.toLowerCase(),
+		doc = document.documentElement,
+
+		ie = 'ActiveXObject' in window,
+
+		webkit = ua.indexOf('webkit') !== -1,
+		phantomjs = ua.indexOf('phantom') !== -1,
+		android23 = ua.search('android [23]') !== -1,
+
+		mobile = typeof orientation !== 'undefined',
+		msPointer = navigator.msPointerEnabled && navigator.msMaxTouchPoints && !window.PointerEvent,
+		pointer = (window.PointerEvent && navigator.pointerEnabled && navigator.maxTouchPoints) || msPointer,
+
+		ie3d = ie && ('transition' in doc.style),
+		webkit3d = ('WebKitCSSMatrix' in window) && ('m11' in new window.WebKitCSSMatrix()) && !android23,
+		gecko3d = 'MozPerspective' in doc.style,
+		opera3d = 'OTransition' in doc.style,
+		opera = window.opera;
+
+
+	var retina = 'devicePixelRatio' in window && window.devicePixelRatio > 1;
+
+	if (!retina && 'matchMedia' in window) {
+		var matches = window.matchMedia('(min-resolution:144dpi)');
+		retina = matches && matches.matches;
+	}
+
+	var touch = !window.L_NO_TOUCH && !phantomjs && (pointer || 'ontouchstart' in window || (window.DocumentTouch && document instanceof window.DocumentTouch));
+
+	browser = {
+		ie: ie,
+		ielt9: ie && !document.addEventListener,
+		webkit: webkit,
+		//gecko: (ua.indexOf('gecko') !== -1) && !webkit && !window.opera && !ie,
+		firefox: (ua.indexOf('gecko') !== -1) && !webkit && !window.opera && !ie,
+		android: ua.indexOf('android') !== -1,
+		android23: android23,
+		chrome: ua.indexOf('chrome') !== -1,
+
+		ie3d: ie3d,
+		webkit3d: webkit3d,
+		gecko3d: gecko3d,
+		opera3d: opera3d,
+		any3d: !window.L_DISABLE_3D && (ie3d || webkit3d || gecko3d || opera3d) && !phantomjs,
+
+		mobile: mobile,
+		mobileWebkit: mobile && webkit,
+		mobileWebkit3d: mobile && webkit3d,
+		mobileOpera: mobile && window.opera,
+
+		touch: !! touch,
+		msPointer: !! msPointer,
+		pointer: !! pointer,
+
+		retina: !! retina,
+		orientation: function() {
+			var w = window.innerWidth,
+				h = window.innerHeight,
+				_orientation = "portrait";
+			
+			if (w > h) {
+				_orientation = "landscape";
+			}
+			if (Math.abs(window.orientation) == 90) {
+				//_orientation = "landscape";
+			}
+			trace(_orientation);
+			return _orientation;
+		}
+	};
+
+}()); 
 /* Google Analytics
 ================================================== */
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

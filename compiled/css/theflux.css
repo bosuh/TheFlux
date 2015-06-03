@@ -7291,6 +7291,11 @@ header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu .about-knight
   display: block;
   height: 52px;
 }
+@media (max-width: 767px) {
+  .profile-nav.profile-nav-sticky {
+    display: none;
+  }
+}
 .profile-nav.profile-nav-sticky .navbar.navbar-default {
   margin-bottom: 0;
 }
