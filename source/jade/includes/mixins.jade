@@ -63,19 +63,11 @@ mixin navbar(story)
 
 				div.navbar-left
 					ul.nav.navbar-nav
-						li.dropdown
-							a.dropdown-toggle.navbar-brand(href="#", data-toggle="dropdown")
-								| The Flux
-								b.caret
-							ul.dropdown-menu
-								li
-									div.container.about-knightlab
-										div.row
-											div.col-sm-12
-												h3 Stories on Transition
-												p TK What do our identities cost us? That's the question six teams of graduate journalism students asked as they tackled six different cultures and six different economies. The result: Six interactive articles that explore what we pay in money, time, energy, and missed opportunities for every choice we make.
 						li
-							a#stories-btn(href="#")
+							a.navbar-brand(href="#")
+								| The Flux
+						li
+							a#stories-btn(href="#{path}/index.html")
 								span.icon-stack(style="margin-right:5px;")
 								| More Stories
 						li#navbar-title

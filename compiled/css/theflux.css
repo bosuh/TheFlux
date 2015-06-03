@@ -6620,6 +6620,9 @@ header.navigation .divider-vertical {
 .storybar a.story-item:hover .story-item-container .story-item-content p {
   text-decoration: none;
 }
+.navbar.navbar-default .navbar-nav {
+  margin-right: 25px;
+}
 .navbar {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -6637,6 +6640,9 @@ header.navigation .divider-vertical {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
 }
+.navbar.navbar-default .navbar-brand {
+  height: auto;
+}
 .navbar.navbar-default .dropdown.open .navbar-brand,
 .navbar.navbar-default .dropdown.open #navbar-title {
   color: #333;
@@ -6644,6 +6650,21 @@ header.navigation .divider-vertical {
 }
 .navbar.navbar-default .navbar-nav {
   margin-right: 25px;
+}
+@media (max-width: 767px) {
+  .navbar.navbar-default .navbar-nav {
+    margin: 0;
+    float: left;
+  }
+  .navbar.navbar-default .navbar-left {
+    float: left !important;
+  }
+  .navbar.navbar-default .navbar-right {
+    float: right !important;
+  }
+  .navbar.navbar-default .navbar-nav > li {
+    float: left;
+  }
 }
 .navbar.navbar-default .navbar-nav > li > a {
   color: #FFF;
@@ -6706,6 +6727,7 @@ header.navigation #navbar-product .container-fluid {
 header.navigation #navbar-product.in-article {
   background-color: rgba(255, 255, 255, 0.9);
   border-bottom: 1px solid #CCC;
+  min-height: 64px;
 }
 header.navigation #navbar-product.in-article .navbar .navbar-nav {
   margin-right: 0;
@@ -6761,6 +6783,9 @@ header.navigation #navbar-product.in-article .divider-vertical {
   display: block;
 }
 @media (max-width: 767px) {
+  header.navigation #navbar-product.in-article {
+    min-height: 0;
+  }
   header.navigation #navbar-product.in-article #navbar-title {
     display: none;
   }

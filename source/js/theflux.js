@@ -438,7 +438,7 @@ $(document).ready(function(){
 	function createStoryNavElement(story, column_width, tall) {
 		var story_el	= "";
 		
-		story_el 		+=  "<div class='col-sm-" + column_width + " col-xs-" + column_width + "'>";
+		story_el 		+=  "<div class='col-sm-" + column_width + " col-xs-" + 4 + "'>";
 		story_el 		+=		"<div class='row'>";
 		story_el 		+= 			"<div class='col-sm-12'>";
 		if (tall) {

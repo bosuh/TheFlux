@@ -1,3 +1,6 @@
+.navbar.navbar-default .navbar-nav {
+  margin-right: 25px;
+}
 .navbar {
 	font-family: @font-family-navbar;
 	font-size:16px;
@@ -16,6 +19,9 @@
 			font-family: @font-family-brand-primary;
 			font-style: italic;
 		}
+		.navbar-brand {
+			height:auto;
+		}
 		.dropdown.open {
 			.navbar-brand,
 			#navbar-title {
@@ -25,6 +31,22 @@
 		}
 		.navbar-nav {
 			margin-right:25px;
+		}
+		@media (max-width: @grid-float-breakpoint-max) {
+			.navbar-nav {
+				margin:0;
+				float:left;
+			}
+			.navbar-left {
+			  float: left !important;
+			}
+			.navbar-right {
+			  float: right !important;
+			}
+			.navbar-nav > li {
+			  float: left;
+			}
+
 		}
 		.navbar-nav > li > a {
 			color: #FFF;
