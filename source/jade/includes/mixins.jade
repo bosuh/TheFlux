@@ -65,7 +65,9 @@ mixin navbar(story)
 					ul.nav.navbar-nav
 						li
 							a.navbar-brand(href="#{path}/index.html")
-								| The Flux
+								span The 
+								div#flux-logo-container
+									include logo.svg
 						li
 							a#stories-btn(href="#")
 								span.icon-stack(style="margin-right:5px;")
