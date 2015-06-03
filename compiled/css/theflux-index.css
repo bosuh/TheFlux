@@ -10,6 +10,12 @@ body,
 html {
   height: 100%;
 }
+@media (max-width: 767px) {
+  .title-panel {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
 .title-panel {
   padding-bottom: 20px;
   text-align: center;
@@ -116,6 +122,11 @@ html {
   font-size: 22px;
   line-height: 24px;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+@media (max-width: 767px) {
+  .story-panel a .story-item .story-item-container p {
+    display: block;
+  }
 }
 .story-panel a:hover {
   text-decoration: none;

@@ -28,6 +28,12 @@ section {
 section.section-break {
 	
 }
+@media (max-width: @grid-float-breakpoint-max) {
+	.title-panel {
+		margin-left:10px;
+		margin-right:10px;
+	}
+}
 .title-panel {
 	padding-bottom: 20px;
 	text-align: center;
@@ -144,6 +150,11 @@ section.section-break {
 					line-height:24px;
 					font-family:@font-family-sans-serif;
 				}
+				@media (max-width: @grid-float-breakpoint-max) {
+					p {
+						display:block;
+					}
+			    }
 			}
 
 		}
