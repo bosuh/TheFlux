@@ -16,6 +16,12 @@ html {
     margin-right: 10px;
   }
 }
+@media (max-width: 992px) {
+  .title-panel {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
 .title-panel {
   padding-bottom: 20px;
   text-align: center;

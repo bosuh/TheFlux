@@ -6962,6 +6962,7 @@ header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu .about-knight
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 0;
 }
+#footer-storybar,
 #navbar-story {
   z-index: 1;
   background-color: #333;
@@ -6969,32 +6970,52 @@ header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu .about-knight
   -webkit-box-shadow: inset 0 0 50px #000000;
   box-shadow: inset 0 0 50px #000000;
 }
+#footer-storybar .story-item,
 #navbar-story .story-item,
+#footer-storybar a.story-item,
 #navbar-story a.story-item {
   background-color: #000;
   height: 60px;
 }
+#footer-storybar .story-item.tall,
 #navbar-story .story-item.tall,
+#footer-storybar a.story-item.tall,
 #navbar-story a.story-item.tall {
   height: auto;
 }
+#footer-storybar .story-item.tall .story-item-background,
 #navbar-story .story-item.tall .story-item-background,
+#footer-storybar a.story-item.tall .story-item-background,
 #navbar-story a.story-item.tall .story-item-background {
   height: auto;
 }
+#footer-storybar .story-item.tall .story-item-container,
 #navbar-story .story-item.tall .story-item-container,
+#footer-storybar a.story-item.tall .story-item-container,
 #navbar-story a.story-item.tall .story-item-container {
   height: auto;
 }
+#footer-storybar .story-item.tall .story-item-container .story-item-content p,
 #navbar-story .story-item.tall .story-item-container .story-item-content p,
+#footer-storybar a.story-item.tall .story-item-container .story-item-content p,
 #navbar-story a.story-item.tall .story-item-container .story-item-content p {
   display: block;
 }
+#footer-storybar .story-item .story-item-background,
 #navbar-story .story-item .story-item-background,
+#footer-storybar a.story-item .story-item-background,
 #navbar-story a.story-item .story-item-background,
+#footer-storybar .story-item .story-item-container,
 #navbar-story .story-item .story-item-container,
+#footer-storybar a.story-item .story-item-container,
 #navbar-story a.story-item .story-item-container {
   height: 60px;
+}
+#footer-storybar {
+  margin-top: 0px;
+  padding-top: 60px;
+  background-color: #FFF;
+  box-shadow: none;
 }
 .story-cover {
   width: 100%;
