@@ -1,3 +1,56 @@
 .gif{
 	margin: auto;
 }
+
+.bodytext p {
+font-size: 10px
+
+}
+
+p {
+	color: #333333   ;
+	font-size: 15px;
+}
+
+#profile {
+	position: relative;	
+}
+/*<div style="position: relative">
+     <img src="imageurl.jpg" />
+     <p style="position: absolute; bottom: 0px;>test test test</p>
+</div>*/
+
+.credit {
+	font-size: 0.6em;
+}
+.profile img {
+	margin-bottom: 25px;
+}
+
+#tile {
+	opacity: 1;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 25px;
+}
+
+.lead {
+	text-align: center;
+
+}
+
+#deckquote{
+
+	text-align: center;
+	width: 100%;
+	margin-bottom: 25px;
+	font-style: italic;
+	color: #3CB371  ;
+	font-size: 30px;
+}
+
+
+
+
+
+.stop { width: 1000}

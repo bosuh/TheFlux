@@ -32,6 +32,12 @@ p {
 	/*font-size: 0.875em;*/
 }
 
+div#houses {
+	width: 100%;
+	height: 100px;
+	margin-bottom: 2em;
+}
+
 .row.header {
 	text-align: center;
 }
