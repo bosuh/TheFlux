@@ -1,9 +1,13 @@
 # The Flux
 Implements [BootstrapStarterKit](https://github.com/Medill/BootstrapStarterKit)
 ## See it
-[See it in action here](http://medill.github.io/BootstrapStarterKit/)
+* [See it in action here](http://medill.github.io/TheFlux/)
+* [Profile Navigation Example](http://medill.github.io/TheFlux/stories/story_template/profile_example.html)
+* [Typography Specimen Sheet](http://medill.github.io/TheFlux/typography.html)
+* [Typography Options 1](http://medill.github.io/TheFlux/typography_option_01.html)
+* [Typography Options 1](http://medill.github.io/TheFlux/typography_option_02.html)
+* [Typography Options 1](http://medill.github.io/TheFlux/typography_option_03.html)
 
-[Typography Specimen Sheet](http://medill.github.io/BootstrapStarterKit/typography.html)
 ##Included Javascript
 * [Laziest Loader Library](http://sjwilliams.github.io/laziestloader/)
 * [Fluidbox](http://terrymun.github.io/Fluidbox/)
@@ -64,12 +68,39 @@ Use the following example as a way to create responsive embeds
 	<figcaption>Reporter Corey Kilgannon, Marcus Yam and myself chased calls over a police scanner for around 16hrs straight. What we found wasn’t what we expected.</figcaption>
 </figure>
 ```
+or for a loopable autoplay video, use the `lazy-loader` css class.
+```html
+<figure>
+	<div class="embed-responsive embed-responsive-16by9">
+		<video autoplay="autoplay" loop="loop" data-pattern="video/video_example_loopable_{{size}}.mp4" data-widths="[600, 900]" class="lazy-video embed-responsive-item"></video>
+	</div>
+</figure>
+```
 ###Blockquotes
 ```html
 <blockquote>
 	<p>We strongly agree that messages that have been out there have been overblown.</p>
 	<cite>John Doe</cite>
 </blockquote>
+```
+Or use `blockquotes` with color
+```html
+<section class="container-fluid blockquote-color">
+	<div class="row">
+		<div class="col-md-12">
+			<blockquote>
+				<div class="col-md-2"></div>
+				<div class="col-md-2">
+					<img src="img/talking_head_01.jpg" data-src="img/talking_head_01.jpg" class="img-responsive img-circle ll-init ll-loaded" style="opacity: 1;">
+				</div>
+				<div class="col-md-6">
+					<p>We strongly agree that messages that have been out there have been overblown.</p>
+					<cite>John Doe</cite>
+				</div>
+			</blockquote>
+		</div>
+	</div>
+</section>
 ```
 
 ###Lead Paragraphs
