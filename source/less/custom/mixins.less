@@ -1,8 +1,8 @@
 .caption() {
 	text-align:left;
-	font-size:12px;
+	font-size:13px;
 	color:#666;
-	line-height:14px;
+	line-height:15px;
 	font-family:@font-family-sans-serif;
 }
 
@@ -13,4 +13,16 @@
 	color:@gray-light;
 	margin: 1px 0px 5px 0px;
 	font-family:@font-family-sans-serif;
+}
+
+.animateAll() {
+	-webkit-transition: all .5s ease;
+	  -moz-transition: all .5s ease;
+	  -ms-transition: all .5s ease;
+	  -o-transition: all .5s ease;
+	  transition: all .5s ease;
+	  transition-property: all;
+	  transition-duration: .5s;
+	  transition-timing-function: ease;
+	  transition-delay: initial;
 }

@@ -1,0 +1,254 @@
+.story-cover {
+    background-image: url('../img/_MG_5229.jpg');
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-size: cover;
+    background-position: left;
+    color: #000;
+}
+
+.headline-row {
+    transform: rotateZ(-3deg);
+}
+
+.headline {
+    font-size: 6em;
+    line-height: 1em;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.headline-box {
+    padding-left: 7px;
+    padding-right: 10px;
+    display: inline;
+    background-color: #e2ff42;
+}
+
+.story-cover-content {
+    text-align: left;
+}
+
+.story-cover .story-cover-content .byline {
+    color: #000;
+    display: inline;
+    background-color: #e2ff42;
+    box-shadow: 10px 0 0 #e2ff42, -10px 0 0 #e2ff42;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.byline-container {
+    margin-left: 10px;
+    margin-top: 30px;
+    transform: rotateZ(-3deg);
+}
+
+.story-cover .story-cover-content p.lead {
+    margin-top: 40px;
+    color: #000;
+    display: inline;
+    background-color: #e2ff42;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 10px 0 0 #e2ff42, -10px 0 0 #e2ff42;
+    text-shadow: none;
+}
+
+.byline {
+    text-shadow: none;
+    line-height: 1.4em;
+}
+
+.lead-container {
+    margin-top: -10px;
+}
+
+div.story-deck {}
+
+.drop-cap-container {
+    transform: rotateZ(-3deg);
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    font-size: 8em;
+    display: inline;
+    position: absolute;
+    top: -100px;
+    right: -20px;
+}
+
+.drop-cap {
+    display: inline;
+    background-color: #e2ff42;
+    box-shadow: 10px 0 0 #e2ff42, -10px 0 0 #e2ff42;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+article h3 {
+    color: rgb(157, 234, 33);
+    margin-top: 2em;
+    text-shadow: 2px 2px 2px #4b4b4b;
+}
+
+blockquote {
+    display: block;
+    padding: 0;
+    font-size: 3.5em;
+    line-height: 0.9998;
+    margin: 20px 0px 20px 0px;
+    border: 0;
+    color: #000;
+    padding: 0.7em;
+    transform: rotateZ(-3deg);
+    z-index: 2;
+}
+
+.picture-quote {
+    position: relative;
+    top: 300px;
+    margin-top: -400px;
+}
+
+.after-image {
+    position: relative;
+    top: -200px;
+    z-index: 3;
+    background-color: #fff;
+    padding-top: 10px;
+}
+
+img {
+    position: relative;
+}
+
+.figure-container {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    height: 500px;
+    background-size: cover;
+}
+
+.noo-what {
+    background-image: url('../img/_MG_5258.jpg');
+}
+
+.the-search {
+    background-image: url('../img/_MG_5293.jpg');   
+}
+
+.regulation {
+    background-image: url('../img/_MG_5250.jpg');  
+}
+
+.cure-all {
+    background-image: url('../img/_MG_5238.jpg');   
+    background-position: bottom;
+}
+
+.uncertain-future {
+    background-image: url('../img/_MG_5252.jpg');  
+}
+
+figure {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+figcaption {
+    margin-left: 10px;
+}
+
+blockquote span {
+    font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    text-transform: uppercase;
+    background-color: #e2ff42;
+    padding: 0px 2px;
+    box-shadow: 10px 0 0 #e2ff42, -10px 0 0 #e2ff42;
+}
+
+blockquote cite {}
+
+.subhead-container {
+    transform: rotateZ(-3deg);
+    margin-top: 50px;
+}
+
+.subhead {
+    font-family: 'Roboto Condensed', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 7em;
+    color: #000;
+    line-height: 1.5em;
+    margin-top: 70px;
+    display: inline;
+    border-bottom: 20px solid #e2ff42;
+    position: relative;
+    top: -100px;
+    background-color: #fff;
+    box-shadow: 10px 0 0 #fff, -10px 0 0 #fff;
+}
+
+.accordion-toggle:hover {
+    cursor: pointer;
+}
+
+.accordion-toggle:active {
+    -webkit-filter: brightness(20%);
+    filter: brightness(20%);
+}
+
+.accordion {
+    width: 100%;
+    font-size: 2em;
+    font-weight: bold;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    color: #9da0a4;
+    border-radius: 4px 0 4px 0;
+}
+
+.accordion-inner {
+    font-weight: 300;
+    font-size: .5em;
+}
+
+.accordion-toggle,
+.accordion-inner {
+    padding: 7px 7px 7px 7px;
+    color: white;
+}
+
+@media (max-width: 992px) {
+    .subhead {
+        top: 0px;
+    }
+}
+
+@media (max-width: 600px) {
+    .headline {
+        font-size: 4em;
+    }
+    .byline {
+        line-height: 1.6em;
+    }
+    .after-image {
+        top: 0;
+    }
+    blockquote {
+        font-size: 1.5em;
+    }
+    .picture-quote {
+        margin-top: 0;
+    }
+    .subhead {
+        font-size: 4.5em;
+    }
+    .drop-cap-container {
+        right: -40px;
+    }
+}

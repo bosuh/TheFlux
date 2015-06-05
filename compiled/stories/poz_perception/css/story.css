@@ -51,9 +51,13 @@ a {
 	text-decoration: none !important;
 }
 
-em {
+.narration {
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
 	color: #868686;
+	font-style: italic;
+	margin-right: 15%;
+	margin-left: 15%;
+	line-height: 1.2;
 }
 
 /* DEFINITIONS */
@@ -61,6 +65,12 @@ em {
 
 mark {
 	background-color: #caeaf7 !important;
+	opacity: 0.7;
+}
+
+mark:hover {
+	cursor: pointer;
+	opacity: 1;
 }
 
 .definition {
@@ -103,8 +113,8 @@ mark {
 }
 
 .poz-nav-btn {
-	width: 9.5em;
-	height: 9.5em;
+	width: 12em;
+	height: 12em;
 	display:inline-block;
 	margin: 0.25em;
 	opacity: 0.6;
