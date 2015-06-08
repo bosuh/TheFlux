@@ -75,10 +75,15 @@ mark:hover {
 	cursor: pointer;
 }
 
-.blue-text {
+span.blue-text{
+	color: #44b6e5;
+}
+
+a.blue-text {
 	color: #87d0ee !important;
 }
-.blue-text a:hover {
+
+a.blue-text:hover {
 	color: #44b6e5 !important;
 }
 
@@ -99,7 +104,18 @@ mark:hover {
 }
 
 .definition-mob {
+	font-family: "Source Sans Pro", Helvetica, sans-serif !important;
+	color: #868686;
+	line-height: 1.2em;
+	margin-top: 1.25em;
+	margin-bottom: 1.25em;
 	display: none;
+	margin-right: 15%;
+	margin-left: 15%;
+}
+
+#push-down {
+	margin-bottom: 10em !important;
 }
 
 /* NAVIGATION */

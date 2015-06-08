@@ -12,6 +12,10 @@ $(document).ready(function(){
     $(this).parent().next('.definition-mob').toggle(this);
 	});
 
+	$('.word-prev-mob').on('click', function(){
+    $(this).parent().prev('.definition-mob').toggle(this);
+	});
+
 	var yPos;
 
 	$( document ).on( "click", function( event ) {
