@@ -8,9 +8,21 @@ $(document).ready(function(){
     $(this).parent().next('.definition').toggle(this);
 	});
 
-//http://stackoverflow.com/questions/28374713/how-can-i-disable-jquery-toggle-effect-when-the-screen-size-changes
+	$('.word-next-mob').on('click', function(){
+    $(this).parent().next('.definition-mob').toggle(this);
+	});
 
-	// THESE ARE BUTTON-SPECIFIC FUNCTIONS TO MAKE THE NARRATIVES APPEAR
+	var yPos;
+
+	$( document ).on( "click", function( event ) {
+  		yPos = event.pageY;
+  		console.log(yPos);
+	});
+
+// FOR DEFINITION ALIGNMENT http://stackoverflow.com/questions/17265280/jquery-ui-position-relative-to-two-elements
+// http://stackoverflow.com/questions/28374713/how-can-i-disable-jquery-toggle-effect-when-the-screen-size-changes
+
+	// THESE ARE BUTTON-SPECIFIC FUNCTIONS TO MAKE THE STORIES APPEAR
 	
 	$( "#johnR-btn" ).click(function() {
 		hideStories();
