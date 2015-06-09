@@ -18,13 +18,16 @@ $(document).ready(function(){
 
 	var yPos;
 
-	$( document ).on( "click", function( event ) {
+	$("#twice").on( "click", function( event ) {
   		yPos = event.pageY;
+  		$(document).getElementById('#twice-as-likely').offset({top: yPos, left: 700});
   		console.log(yPos);
 	});
 
+//	$("#twice-as-likely").offset({top: yPos, left: 700});
+
+
 // FOR DEFINITION ALIGNMENT http://stackoverflow.com/questions/17265280/jquery-ui-position-relative-to-two-elements
-// http://stackoverflow.com/questions/28374713/how-can-i-disable-jquery-toggle-effect-when-the-screen-size-changes
 
 	// THESE ARE BUTTON-SPECIFIC FUNCTIONS TO MAKE THE STORIES APPEAR
 	
@@ -67,14 +70,6 @@ $(document).ready(function(){
 		hideStories();
 	  $( "#philC" ).fadeIn( "slow", function() {
 	  	console.log("This is Phil's story.");
-	  });
-	});
-
-	// THIS IS TO MAKE THE BLANK SPACE DISAPPER
-	// NOT SURE WHAT THIS IS FOR - ZACH
-	$( ".storyBTN" ).click(function() {
-	  $( "#blankSpace" ).hide( "fast", function() {
-	    console.log("Blank space hidden.");
 	  });
 	});
 

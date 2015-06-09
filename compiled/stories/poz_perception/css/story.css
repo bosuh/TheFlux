@@ -95,6 +95,10 @@ a.blue-text:hover {
 	display: none;
 }
 
+#twice-as-likely {
+	position: absolute;
+}
+
 .definition p{
 	font-family: "Source Sans Pro", Helvetica, sans-serif !important;
 	color: #868686;
