@@ -22,6 +22,7 @@
 
 .story-cover-content {
 	margin-bottom: 22em;
+	margin-top: 10em;
 }
 
 .story-cover-image {
@@ -95,15 +96,14 @@ a.blue-text:hover {
 	display: none;
 }
 
-#twice-as-likely {
-	position: absolute;
-}
-
 .definition p{
 	font-family: "Source Sans Pro", Helvetica, sans-serif !important;
 	color: #868686;
 	padding: 0.7em;
-	line-height: 1.5em;
+	font-size: 0.9em;
+	line-height: 1.2em;
+	font-weight: 400;
+	font-style: italic;
 	margin: 0;
 }
 
@@ -111,8 +111,10 @@ a.blue-text:hover {
 	font-family: "Source Sans Pro", Helvetica, sans-serif !important;
 	color: #868686;
 	line-height: 1.2em;
+	font-size: 0.9em;
 	margin-top: 1.25em;
 	margin-bottom: 1.25em;
+	font-style: italic;
 	display: none;
 	margin-right: 15%;
 	margin-left: 15%;

@@ -16,7 +16,7 @@ $(document).ready(function(){
     $(this).parent().prev('.definition-mob').toggle(this);
 	});
 
-	var yPos;
+/*	var yPos;
 
 	$("#twice").on( "click", function( event ) {
   		yPos = event.pageY;
@@ -24,8 +24,8 @@ $(document).ready(function(){
   		console.log(yPos);
 	});
 
-//	$("#twice-as-likely").offset({top: yPos, left: 700});
-
+	$("#twice-as-likely").offset({top: yPos, left: 700});
+*/
 
 // FOR DEFINITION ALIGNMENT http://stackoverflow.com/questions/17265280/jquery-ui-position-relative-to-two-elements
 
